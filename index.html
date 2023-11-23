@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+        const computerSelection = getComputerChoice();
+        function getComputerChoice() {
+            let randomChoice = Math.floor(Math.random() * 9) + 1;
+            if (randomChoice <= 3) {
+                return "rock";
+            } else if (randomChoice <= 6) {
+                return "paper";
+            } else {
+                return "scissors";
+            }
+        };
+
+        function playRound(playerSelection, computerSelection) {
+            if (playerSelection === "rock" && computerSelection === "paper") {
+                console.log("You lose! Paper beats Rock")
+            } else if (playerSelection == "rock" && computerSelection === "scissors")
+        }
+    </script>
+</body>
+</html>
